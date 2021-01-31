@@ -1,7 +1,7 @@
 {
   "name": "seubarriga",
   "version": "1.0.0",
-  "description": "",
+  "description": "API e controle financeiro",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/** test/** --fix",
