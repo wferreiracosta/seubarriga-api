@@ -1,0 +1,24 @@
+{
+  "name": "seubarriga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/** test/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wferreiracosta/seubarriga-api.git"
+  },
+  "author": "Wesley Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wferreiracosta/seubarriga-api/issues"
+  },
+  "homepage": "https://github.com/wferreiracosta/seubarriga-api#readme",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
