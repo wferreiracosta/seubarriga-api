@@ -1,9 +1,12 @@
 const app = require('express')();
 const consign = require('consign');
 const knex = require('knex');
+const knexlogger = require('knex-logger');
 const knexfile = require('../knexfile');
 
 app.db = knex(knexfile.test);
+
+app.use(knexlogger(app.db));
 
 consign({ cwd: 'src', verboso: false })
   .include('./config/middlewares.js')
