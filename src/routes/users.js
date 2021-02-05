@@ -5,9 +5,14 @@ module.exports = (app) => {
   };
 
   const create = async (req, res) => {
-    await app.services.user.save(req.body);
+    const result = await app.services.user.save(req.body);
+
+    if (result.error) {
+      return res.status(400).json(result);
+    }
+
     app.services.user.findByEmail(req.body.email)
-      .then((result) => res.status(201).json(result));
+      .then((returnedUser) => res.status(201).json(returnedUser));
   };
 
   return { findAll, create };

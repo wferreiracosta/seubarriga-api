@@ -5,6 +5,7 @@
     "extends": "airbnb-base",
     "rules": {
         "arrow-body-style": "off",
-        "import/newline-after-import": "off"
+        "import/newline-after-import": "off",
+        "consistent-return": "off"
     }
 }
